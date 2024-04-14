@@ -1,0 +1,76 @@
+           PROBABILITY CALCULATOR
+>>create a new python file
+>>below is a sample code
+example:
+**********************************************
+from prob_calculator import experiment
+
+# Define the hat, expected balls, number of balls drawn, and number of experiments
+hat = ['red', 'red', 'red', 'green', 'green']
+expected_balls = {'red': 2, 'green': 2}
+num_balls_drawn = 4
+num_experiments = 100000
+
+# Run the experiment and print the result
+result = experiment(hat, expected_balls, num_balls_drawn, num_experiments)
+print(f"The probability of drawing {num_balls_drawn} balls with the expected colors is {result:.4f}.")
+**********************************************
+
+             ARITHEMETIC ARRANGER
+>>create a new python file
+>>below is a sample code
+example:
+*************************************************
+from arithmetic_arranger import arithmetic_arranger
+
+problems = ["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]
+result = arithmetic_arranger(problems, show_answers=True)
+print(result)
+*************************************************
+
+            BUDGET
+>>create a new python file
+>>below is a sample code
+example:
+*************************************************
+from budget import Category,create_spend_chart
+# Create some categories
+food = Category("Food")
+entertainment = Category("Entertainment")
+clothing = Category("Clothing")
+
+# Make some transactions
+food.deposit(1000, "Initial deposit")
+food.withdraw(123.56, "Groceries")
+entertainment.deposit(500, "Initial deposit")
+entertainment.withdraw(123.45, "Movie tickets")
+clothing.deposit(2000, "Initial deposit")
+clothing.withdraw(150.00, "Shirt")
+clothing.withdraw(35.67, "Tie")
+
+# Transfer money between categories
+food.transfer(50, clothing)
+
+# Print the balance of each category
+print(food)
+print(entertainment)
+print(clothing)
+
+# Print the spend chart
+print(create_spend_chart([food, entertainment, clothing]))
+******************************************************
+
+               TIME CALCULATOR
+>>create a new python file
+>>below is a sample code
+example:
+************************************************************
+from time_calculator import add_time
+
+print(add_time("11:55 PM", "3:15"))
+print(add_time("11:55 PM", "3:15", "saturday"))
+print(add_time("3:30 PM", "2:32", "tuesday"))
+print(add_time("11:59 PM", "24:00"))
+print(add_time("11:59 PM", "24:00", "wednesday"))
+***********************************************************
+Hope this was able to provide insight on how to use the following code😁
